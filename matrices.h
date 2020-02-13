@@ -19,5 +19,6 @@ void setMatrixElement(matrix*, int, int, double);   /* set the Matrix Element at
 /* Matrix operations */
 int matrixMult(matrix*, matrix*, matrix*);          /* Input_mat1* Input_mat2 = Output_mat */
 int matrixFunc(matrix*, double (*fktp)(double));    /* use a mathematical function on all matrix elements */
+int matrixTrans(matrix*, matrix*);                  /* Transposes the first matrix into the second */
 
 #endif

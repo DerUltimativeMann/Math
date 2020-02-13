@@ -112,3 +112,20 @@ int matrixFunc(matrix *mat, double (*fktp)(double))
 
     return MATRIXMATH_OK;
 }
+
+
+int matrixTrans(matrix *mat_in, matrix *mat_trans)
+{
+    int i, j;
+    initMatrix(mat_trans, mat_in->m, mat_in->n);
+
+    for(i=0; i < mat_in->n; i++)
+    {
+        for(j=0; j < mat_in->m; j++)
+        {
+            mat_trans->val[j][i] = mat_in->val[i][j];
+        }
+    }
+
+    return MATRIXMATH_OK;
+}

@@ -24,11 +24,6 @@ void printMat(matrix *mat)
     }
 }
 
-double times2(double val)
-{
-    return val*2;
-}
-
 double sigmoid(double val)
 {
     return 1.0 / (1.0 + exp(-val));
